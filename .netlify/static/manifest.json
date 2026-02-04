@@ -1,0 +1,16 @@
+{
+  "name": "Lektorens Høyre Hånd",
+  "short_name": "Lektoren",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "Et verktøy for lærere",
+  "icons": [
+    {
+      "src": "/file.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
