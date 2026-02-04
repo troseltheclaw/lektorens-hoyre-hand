@@ -15,7 +15,6 @@ package = "@netlify/plugin-nextjs"
 publish = "/Users/trosel-ai/.openclaw/workspace/lektorens-hoyre-hand/.next"
 publishOrigin = "ui"
 commandOrigin = "ui"
-base = "/Users/trosel-ai/.openclaw/workspace/lektorens-hoyre-hand"
 command = "npm run build"
 
 [build.environment]

@@ -60,8 +60,13 @@ export async function POST(req: NextRequest) {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("OpenRouter API error:", response.status, errorText);
-      throw new Error(`OpenRouter API responded with status: ${response.status}`);
+      console.error(
+        `OpenRouter API feilrespons. Status: ${response.status} ${response.statusText}. Detaljer: ${errorText}`
+      );
+      return NextResponse.json(
+        { error: "Kommunikasjonsfeil med AI-tjenesten. Vennligst prøv igjen senere." },
+        { status: 502 }
+      );
     }
 
     const data = await response.json();
